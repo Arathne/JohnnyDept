@@ -1,6 +1,11 @@
 #include <iostream>
 
+#include "player.h"
+#include "startNode.h"
+
 int main()
 {
-    std::cout << "Hello World!" << std::endl;
+	StartNode start;
+
+	start.process();
 }
