@@ -6,16 +6,9 @@
 class EndNode : public Node
 {
 	public:
-		EndNode (std::string msg);
-		~EndNode (void);
-		
-		int process (Player & player);
-
-
-	private:
 		EndNode (void);
-
-		std::string msg_;
+		~EndNode (void);
+		int process (Player & player);
 };
 
 #endif

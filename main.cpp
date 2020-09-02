@@ -3,20 +3,26 @@
 #include "player.h"
 #include "decisionNode.h"
 #include "endNode.h"
+#include "casinoNode.h"
+#include "slotsNode.h"
 
 int main()
 {
 	int state_size = 2;
-	int current_state = 0;
-	
+	int current_state = 1;
+
 	Player player;
 
-	Node* decision = new DecisionNode(1);
-	Node* end = new EndNode("kidnapped and sold into slavery");
-	
+	Node* end = new EndNode();
+	Node* decision = new DecisionNode (0, 2);
+	Node* casino = new CasinoNode (1, 3);
+	Node* slots = new SlotsNode (2);
+
 	Node* states[] = {
+		end,
 		decision,
-		end
+		casino,
+		slots
 	};
 
 	while (current_state >= 0)

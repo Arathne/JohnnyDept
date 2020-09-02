@@ -6,15 +6,14 @@
 class DecisionNode : public Node
 {
 	public:
-		DecisionNode (int end);
+		DecisionNode (int end, int casino);
 		~DecisionNode (void);
-
 		int process (Player & player);
 
 	private:
 		DecisionNode (void);
-		
 		int end_;
+		int casino_;
 };
 
 #endif
