@@ -3,12 +3,13 @@
 
 #include <iostream>
 #include <string>
+#include "player.h"
 
 class Node
 {
 	public:
 		virtual ~Node (void) {};
-		virtual int process (void) = 0;
+		virtual int process (Player & player) = 0;
 };
 
 #endif

@@ -6,12 +6,12 @@ DecisionNode::DecisionNode (int end):
 
 DecisionNode::~DecisionNode (void) {}
 
-int DecisionNode::process (void) 
+int DecisionNode::process (Player & player) 
 {
 	bool run = true;
 	while (run)
 	{
-		std::cout << std::endl << "You are at a crossroad.\n" << "1: go to the casino\n\n" << "?: ";
+		std::cout << std::endl << "*>  YOU ARE AT A CROSSROAD  <*\n\n" << "1: go to the casino\n\n" << "?: ";
 		
 		std::string answer;
 		std::cin >> answer;
@@ -20,6 +20,6 @@ int DecisionNode::process (void)
 			run = false;
 		}
 	}
-
+	
 	return end_;
 }

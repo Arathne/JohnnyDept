@@ -9,7 +9,7 @@ class DecisionNode : public Node
 		DecisionNode (int end);
 		~DecisionNode (void);
 
-		int process (void);
+		int process (Player & player);
 
 	private:
 		DecisionNode (void);

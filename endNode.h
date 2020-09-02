@@ -9,7 +9,7 @@ class EndNode : public Node
 		EndNode (std::string msg);
 		~EndNode (void);
 		
-		int process (void);
+		int process (Player & player);
 
 
 	private:

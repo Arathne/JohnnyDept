@@ -6,8 +6,11 @@ EndNode::EndNode (std::string msg):
 
 EndNode::~EndNode (void) {}
 
-int EndNode::process (void) 
+int EndNode::process (Player & player) 
 {
-	std::cout << "\n====== GAME OVER ========\n\n" << msg_ << std::endl;
+	std::cout << "\n*>  GAME OVER  <*"
+	          << "\n*>  CASH: " << player.cash() << "  <*\n"
+	          << "\n*>  " << msg_ << "  <*\n" << std::endl;
+	
 	return -1;
 }

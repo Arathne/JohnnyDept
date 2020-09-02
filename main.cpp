@@ -8,6 +8,8 @@ int main()
 {
 	int state_size = 2;
 	int current_state = 0;
+	
+	Player player;
 
 	Node* decision = new DecisionNode(1);
 	Node* end = new EndNode("kidnapped and sold into slavery");
@@ -19,7 +21,7 @@ int main()
 
 	while (current_state >= 0)
 	{
-		current_state = states[current_state]-> process();
+		current_state = states[current_state]-> process(player);
 	}
 	
 	for( int i = 0; i < state_size; i++ )
