@@ -1,4 +1,4 @@
-#include "decisionNode.h"
+#include <decisionNode.h>
 
 DecisionNode::DecisionNode (int end, int casino):
 	end_(end),

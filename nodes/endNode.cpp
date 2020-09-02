@@ -1,4 +1,4 @@
-#include "endNode.h"
+#include <endNode.h>
 
 EndNode::EndNode (void) {}
 

@@ -1,4 +1,4 @@
-#include "slotsNode.h"
+#include <slotsNode.h>
 
 SlotsNode::SlotsNode (int casino):
 	casino_(casino)

@@ -1,4 +1,4 @@
-#include "player.h"
+#include <player.h>
 
 #define INIT_CASH 0
 

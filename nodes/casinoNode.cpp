@@ -1,4 +1,4 @@
-#include "casinoNode.h"
+#include <casinoNode.h>
 
 CasinoNode::CasinoNode (int crossroads, int slots):
 	crossroads_(crossroads),

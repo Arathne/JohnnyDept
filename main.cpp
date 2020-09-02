@@ -1,10 +1,10 @@
 #include <iostream>
 
-#include "player.h"
-#include "decisionNode.h"
-#include "endNode.h"
-#include "casinoNode.h"
-#include "slotsNode.h"
+#include <player.h>
+#include <decisionNode.h>
+#include <endNode.h>
+#include <casinoNode.h>
+#include <slotsNode.h>
 
 int main()
 {
