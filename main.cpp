@@ -1,11 +1,11 @@
 #include <iostream>
 
 #include "player.h"
-#include "startNode.h"
+#include "decisionNode.h"
 
 int main()
 {
-	StartNode start;
+	DecisionNode start;
 
-	start.process();
+	std::cout << start.process() << std::endl;
 }

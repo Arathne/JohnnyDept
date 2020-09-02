@@ -1,7 +1,7 @@
 version = -std=c++11
 
-build: main.o player.o startNode.o
-	g++ $(version) main.o player.o startNode.o -o game
+build: main.o player.o decisionNode.o
+	g++ $(version) main.o player.o decisionNode.o -o game
 
 main.o: main.cpp
 	g++ -c main.cpp
@@ -9,8 +9,8 @@ main.o: main.cpp
 player.o: player.h player.cpp
 	g++ -c player.cpp
 
-startNode.o: startNode.h startNode.cpp
-	g++ -c startNode.cpp
+decisionNode.o: decisionNode.h decisionNode.cpp
+	g++ -c decisionNode.cpp
 
 run: build
 	./game

@@ -3,11 +3,11 @@
 
 #include "node.h"
 
-class StartNode : public Node
+class DecisionNode : public Node
 {
 	public:
-		StartNode (void);
-		~StartNode (void);
+		DecisionNode (void);
+		~DecisionNode (void);
 
 		int process (void);	
 };
