@@ -12,12 +12,13 @@
 #include <coinFlipNode.h>
 #include <rockPSNode.h>
 #include <twentyOneNode.h>
+#include <fightClubNode.h>
 
 int main()
 {
 	srand(time(NULL));
 
-	int state_size = 8;
+	int state_size = 11;
 	int current_state = 1;
 
 	Player player;
@@ -29,10 +30,11 @@ int main()
 	Node* slotsLegal = new SlotsNode (4, 0, 3, 4, 25000, 200);
 	Node* slotsIllegal = new SlotsNode (7, 0, 6, 6, 250000, 2500);
 	Node* illegalEntrance = new IllegalEntranceNode (6, 2);
-	Node* illegal = new IllegalNode (6, 2, 7);
+	Node* illegal = new IllegalNode (6, 2, 7, 11, 12, 13);
 	Node* coinFlip = new CoinFlipNode (8, 0, 3, 300, 9);
 	Node* twentyOne = new TwentyOneNode (9, 0, 3, 800, 15);
 	Node* rockPS = new RockPSNode (10, 0, 3, 400, 12);
+	Node* fightClub = new FightClubNode (12, 0, 6, 10000, 4);
 
 	Node* states[] = {
 		end,
@@ -45,7 +47,9 @@ int main()
 		slotsIllegal,
 		coinFlip,
 		twentyOne,
-		rockPS
+		rockPS,
+		fightClub,
+		fightClub
 	};
 
 	while (current_state >= 0)

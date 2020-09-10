@@ -81,5 +81,8 @@ int TwentyOneNode::process (Player & player)
 		}
 	}
 
+	if (player.cash() <= 0)
+		state = end_;
+
 	return state;
 }

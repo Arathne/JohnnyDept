@@ -6,7 +6,7 @@
 class IllegalNode : public Node
 {
 	public:
-		IllegalNode (int current, int casino, int slots);
+		IllegalNode (int current, int casino, int slots, int horserace, int fightclub, int hangman);
 		~IllegalNode (void);
 		int process (Player & player);
 
@@ -16,6 +16,9 @@ class IllegalNode : public Node
 		int current_;
 		int casino_;
 		int slots_;
+		int horserace_;
+		int fightclub_;
+		int hangman_;
 };
 
 #endif
