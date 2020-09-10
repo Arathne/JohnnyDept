@@ -6,13 +6,20 @@
 class SlotsNode : public Node 
 {
 	public:
-		SlotsNode (int casino);
+		SlotsNode (int current, int end, int legal, int maxRoll, int prize, int cost);
 		~SlotsNode (void);
 		int process (Player & player);
 
 	private:
 		SlotsNode (void);
-		int casino_;
+		int play (void);
+
+		int current_;
+		int end_;
+		int legal_;
+		int maxRoll_;
+		int prize_;
+		int cost_;
 };
 
 #endif

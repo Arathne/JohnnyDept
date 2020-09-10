@@ -15,6 +15,8 @@ class Player
 		void take (int cash);
 
 	private:
+		void checkCash (void);
+
 		int cash_;
 };
 

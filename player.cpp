@@ -1,6 +1,6 @@
 #include <player.h>
 
-#define INIT_CASH 0
+#define INIT_CASH 350000
 
 Player::Player (void): 
 	cash_(INIT_CASH)
@@ -24,12 +24,18 @@ int Player::cash (void) const
 
 void Player::give (int cash) 
 {
-	if (cash > 0) 
-		cash_ += cash;
+	cash_ += cash;
+	Player::checkCash();
 }
 
 void Player::take (int cash)
 {
-	if (cash > 0)
-		cash_ -= cash;
+	cash_ -= cash;
+	Player::checkCash();
+}
+
+void Player::checkCash (void)
+{
+	if (cash_ < 0)
+		cash_ = 0;
 }
