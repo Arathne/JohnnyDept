@@ -6,17 +6,18 @@
 class TwentyOneNode : public Node
 {
 	public:
-		TwentyOneNode (int current, int end, int casino, int cost);
+		TwentyOneNode (int current, int end, int casino, int cost, int multiplier);
 		~TwentyOneNode (void);
 		int process (Player & player);
 
 	private:
 		TwentyOneNode (void);
-		
+
 		int current_;
 		int end_;
 		int casino_;
 		int cost_;
+		int multiplier_;
 };
 
 #endif

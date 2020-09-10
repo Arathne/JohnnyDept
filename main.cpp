@@ -30,9 +30,9 @@ int main()
 	Node* slotsIllegal = new SlotsNode (7, 0, 6, 6, 250000, 2500);
 	Node* illegalEntrance = new IllegalEntranceNode (6, 2);
 	Node* illegal = new IllegalNode (6, 2, 7);
-	Node* coinFlip = new CoinFlipNode (8, 0, 3, 300, 10);
-	Node* twentyOne = new TwentyOneNode (9, 0, 3, 100);
-	Node* rockPS = new RockPSNode (10, 0, 3, 500, 10);
+	Node* coinFlip = new CoinFlipNode (8, 0, 3, 300, 9);
+	Node* twentyOne = new TwentyOneNode (9, 0, 3, 800, 15);
+	Node* rockPS = new RockPSNode (10, 0, 3, 400, 12);
 
 	Node* states[] = {
 		end,

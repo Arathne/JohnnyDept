@@ -15,10 +15,10 @@ int LegalNode::process (Player & player)
 {
 	int state = current_;
 
-	std::cout << std::endl << "*>  LOTS OF GAMES ALL AROUND YOU  <*\n\n" 
+	std::cout << std::endl << "*>  LOTS OF GAMES ALL AROUND YOU  <*\n\n"
 		<< "1: slot machines\n"
 		<< "2: coin flip\n"
-		<< "3: twenty one\n"
+		<< "3: black jack\n"
 		<< "4: rock paper scissors\n"
 		<< "5: go back to the entrance\n\n"
 		<< "?: ";
