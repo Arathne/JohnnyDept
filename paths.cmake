@@ -13,4 +13,5 @@ set( cpp_files
 	nodes/rockPSNode.cpp
 	nodes/fightClubNode.cpp
 	nodes/horseRaceNode.cpp
+	nodes/hangmanNode.cpp
 )

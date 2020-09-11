@@ -14,6 +14,7 @@
 #include <twentyOneNode.h>
 #include <fightClubNode.h>
 #include <horseRaceNode.h>
+#include <hangmanNode.h>
 
 int main()
 {
@@ -37,6 +38,7 @@ int main()
 	Node* rockPS = new RockPSNode (10, 0, 3, 400, 12);
 	Node* horseRace = new HorseRaceNode (11, 0, 6, 10000, 4);
 	Node* fightClub = new FightClubNode (12, 0, 6, 10000, 4);
+	Node* hangman = new HangmanNode (13, 0, 6);
 
 	Node* states[] = {
 		end,
@@ -52,7 +54,7 @@ int main()
 		rockPS,
 		horseRace,
 		fightClub,
-		illegal
+		hangman
 	};
 
 	while (current_state >= 0)
