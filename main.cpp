@@ -20,7 +20,7 @@ int main()
 {
 	srand(time(NULL));
 
-	int state_size = 11;
+	int state_size = 14;
 	int current_state = 1;
 
 	Player player;

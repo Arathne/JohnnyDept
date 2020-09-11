@@ -13,7 +13,7 @@ HangmanNode::~HangmanNode (void) {}
 int HangmanNode::process (Player & player)
 {
 	int state = casino_;
-	int prize = 1000000;
+	int prize = 3000000;
 
 	std::cout << std::endl << "*>  WELCOME TO HANGMAN  <*\n"
 		<< "*>  guess the word  <*\n"

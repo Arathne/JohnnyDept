@@ -1,8 +1,8 @@
 cmake_minimum_required( VERSION 3.16.2 )
 
 project( JohnnyDept
-         VERSION 1.0 
-         DESCRIPTION "dark text based game"
+         VERSION 1.0
+         DESCRIPTION "feed your gambling addiction"
          LANGUAGES CXX )
 
 set( CMAKE_CXX_STANDARD 11 )
