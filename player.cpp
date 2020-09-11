@@ -1,8 +1,8 @@
 #include <player.h>
 
-#define INIT_CASH 350000
+#define INIT_CASH 300000
 
-Player::Player (void): 
+Player::Player (void):
 	cash_(INIT_CASH)
 {}
 
@@ -10,7 +10,7 @@ Player::Player (int cash):
 	cash_(cash)
 {}
 
-Player::Player (const Player & player): 
+Player::Player (const Player & player):
 	cash_(player.cash_)
 {}
 
@@ -22,7 +22,7 @@ int Player::cash (void) const
 	return cash_;
 }
 
-void Player::give (int cash) 
+void Player::give (int cash)
 {
 	cash_ += cash;
 	Player::checkCash();

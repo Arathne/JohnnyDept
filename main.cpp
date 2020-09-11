@@ -37,7 +37,7 @@ int main()
 	Node* twentyOne = new TwentyOneNode (9, 0, 3, 800, 15);
 	Node* rockPS = new RockPSNode (10, 0, 3, 400, 12);
 	Node* horseRace = new HorseRaceNode (11, 0, 6, 10000, 4);
-	Node* fightClub = new FightClubNode (12, 0, 6, 10000, 4);
+	Node* fightClub = new FightClubNode (12, 0, 6, 20000, 3);
 	Node* hangman = new HangmanNode (13, 0, 6);
 
 	Node* states[] = {
@@ -56,6 +56,9 @@ int main()
 		fightClub,
 		hangman
 	};
+
+	std::cout << "*>  The russian mafia want their money back, this happened because you borrowed 1 dollar with an insane amount of interest  <*" << std::endl;
+	std::cout << "*>  go find a way to make $1,000,000 fast!!!!!  <*" << std::endl;
 
 	while (current_state >= 0)
 	{
