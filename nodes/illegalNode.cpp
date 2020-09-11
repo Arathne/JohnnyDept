@@ -34,7 +34,7 @@ int IllegalNode::process (Player & player)
 		state = fightclub_;
 	else if (answer == "4")
 		state = hangman_;
-	else if (answer == "4")
+	else if (answer == "5")
 		state = casino_;
 
 	return state;

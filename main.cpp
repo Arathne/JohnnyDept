@@ -13,6 +13,7 @@
 #include <rockPSNode.h>
 #include <twentyOneNode.h>
 #include <fightClubNode.h>
+#include <horseRaceNode.h>
 
 int main()
 {
@@ -34,6 +35,7 @@ int main()
 	Node* coinFlip = new CoinFlipNode (8, 0, 3, 300, 9);
 	Node* twentyOne = new TwentyOneNode (9, 0, 3, 800, 15);
 	Node* rockPS = new RockPSNode (10, 0, 3, 400, 12);
+	Node* horseRace = new HorseRaceNode (11, 0, 6, 10000, 4);
 	Node* fightClub = new FightClubNode (12, 0, 6, 10000, 4);
 
 	Node* states[] = {
@@ -48,8 +50,9 @@ int main()
 		coinFlip,
 		twentyOne,
 		rockPS,
+		horseRace,
 		fightClub,
-		fightClub
+		illegal
 	};
 
 	while (current_state >= 0)
