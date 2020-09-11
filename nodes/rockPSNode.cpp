@@ -46,17 +46,14 @@ int RockPSNode::process (Player & player)
 		int computer = (rand() % 3) + 1;
 		int win = 0;
 
-		if (user == computer)
+		if (user == computer) // decide if player has won
 			win = -1;
-		else if (user == 1 && computer == 3) {
+		else if (user == 1 && computer == 3)
 			win = 1;
-		}
-		else if (user == 2 && computer == 1) {
+		else if (user == 2 && computer == 1)
 			win = 1;
-		}
-		else if (user == 3 && computer == 2) {
+		else if (user == 3 && computer == 2)
 			win = 1;
-		}
 
 
 		if (win == -1) {

@@ -1,7 +1,7 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-class Player 
+class Player
 {
 	public:
 		Player (void);
@@ -10,8 +10,7 @@ class Player
 		~Player (void);
 
 		int cash (void) const;
-		
-		void give (int cash);	
+		void give (int cash);
 		void take (int cash);
 
 	private:

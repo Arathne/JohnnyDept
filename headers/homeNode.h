@@ -12,6 +12,7 @@ class HomeNode : public Node
 
 	private:
 		HomeNode (void);
+
 		int current_;
 		int end_;
 		int casino_;

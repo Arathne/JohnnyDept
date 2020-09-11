@@ -20,19 +20,20 @@ int IllegalEntranceNode::process (Player & player)
 		state = illegal_;
 	}
 	else {
+		// player must pay to gain access
 		std::cout << "*>  THE GATEKEEPER DID NOT RECOGNIZE YOU  <*\n\n"
 			<< "*>  GATEKEEPER: pay $100,000 for access  <*\n\n"
 			<< "1. pay $100,000\n"
 			<< "2. walk away awkwardly\n\n"
 			<< "?: ";
-		
+
 		std::string answer;
 		std::cin >> answer;
-	
+
 		if (answer == "1") {
-			if (player.cash() >= 100000) {
+			if (player.cash() >= 100000) { // transaction successful
 				std::cout << "\n*>  YOU ENTER THE TEIAI UNDERGROUND CASINO  <*\n";
-				
+
 				player.take(100000);
 				state = illegal_;
 				payed_ = true;
